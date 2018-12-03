@@ -27,7 +27,7 @@ ORDER BY Dollars_Awarded DESC;
 --top 10 contract recipients in california
 SELECT recipient_name, sum(current_total_value_of_award) Total_Value
 FROM contracts_prime_trimmed
-WHERE recipient_state_name = 'California'
+WHERE recipient_state_name = 'CALIFORNIA'
 GROUP BY recipient_name
 ORDER BY Total_Value DESC LIMIT 10;
 
