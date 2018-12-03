@@ -15,3 +15,4 @@ We performed most of our queries on this trimmed table, for performance reasons.
 Notes:
 For 'contracts_prime_part' and 'assist_prime_part', replace 'NNN' in queries with part number.
 This is because loading the entire data for the contracts or assistance tables causes Beeline to run out of memory.
+Resulting '.tsv' and Excel files are uploaded to the Results folder, except for the trimmed tables containing all records because of the size. This means the Excel workbook containing the 3D Maps for the spacial and temporal is not available.
