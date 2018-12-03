@@ -24,6 +24,13 @@ FROM contracts_prime_trimmed
 GROUP BY awarding_agency_name
 ORDER BY Dollars_Awarded DESC;
 
+--top 10 contract recipients in california
+SELECT recipient_name, sum(current_total_value_of_award) Total_Value
+FROM contracts_prime_trimmed
+WHERE recipient_state_name = 'California'
+GROUP BY recipient_name
+ORDER BY Dollars_Awarded DESC LIMIT 10;
+
 --further trim into output files
 INSERT OVERWRITE DIRECTORY '/user/svallej5/_project/results/contr_trimmed/'
 ROW FORMAT DELIMITED
