@@ -2,6 +2,7 @@
 
 We downloaded 2017-2018 US Spending Data from:
 https://www.usaspending.gov
+
 File size was around 1.7GB compressed; uncompresses into around 12GB.
 
 And then we processed and loaded the data onto a remote Hadoop cluster hosted by Oracle.
